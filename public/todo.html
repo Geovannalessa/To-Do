@@ -24,8 +24,17 @@
             </ul>
         </div>
         <div id="bloco">
-            <textarea name="lista" id="lista" cols="30" rows="infinite"></textarea>
+            <input id="checkbox" type="checkbox" name="lista" id="lista">
+            <textarea required name="lista" id="lista" cols="30" rows="10" style="width:660px;" wrap="hard" ></textarea>
         </div>
+        <script>
+            const textarea = document.querySelector("textarea");
+            textarea.addEventListener("keyup", e =>{
+                textarea.style.height = "20px";
+                let scHeight = e.target.scrollHeight;
+                textarea.style.height = `${scHeight}px`;
+            });
+        </script>
     </main>
     <footer>
 

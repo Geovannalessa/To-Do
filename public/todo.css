@@ -37,16 +37,39 @@ header>div{
 }
 #botao_de_volta>img{
     background-color: rgba(248, 252, 250, 0.062);
-    opacity: 25%;
+    opacity: 55%;
     height: 23px;
     width: 23px;
     padding: 3px;
     border-radius: 20px;
 }
 #botao_de_volta>img:hover{
-    opacity: 30%;
+    opacity: 70%;
     border: 1px solid rgb(189, 250, 46); 
 }
 #bloco{
-    background-color: antiquewhite;
+    background-color: rgba(255, 255, 255, 0.979);
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 0;
+    height: fit-content;
+}
+#checkbox{
+    border: 1px yellow solid;
+}
+#texto{
+
+}
+#bloco>textarea{
+    background-color: rgba(255, 255, 255, 0.979);
+    border: rgba(128, 128, 128, 0.091) solid 1px;
+    margin: auto;
+    resize: none;
+    outline: none;
+    padding: 0 5px;
+    overflow-y: hidden;
+}
+textarea:is(:focus,:valid){
+    border-width: 2px;
+    border-color: aqua;
 }
