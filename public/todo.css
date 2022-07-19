@@ -1,14 +1,52 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 body{
     background-color: black;
 }
-header{
-    background-color: rgb(223, 190, 190);
-    height: 100px;
+main{
+    margin: auto;
+    width: 700px;
+    border: 1px rgba(255, 255, 255, 0.336) solid;
 }
+header{
+    height: 100px;
+    padding: 10px;
+    border-bottom: 1px white solid;
+    background-color:rgba(0, 0, 0, 0.31) ;
+} 
 header>div{
-    color:white;
+    -webkit-text-stroke: 1px rgb(163, 17, 216);
+    font-size: 40px;
+    width: 20px;
+    height: fit-content;
+} 
+#mini_cabecalho>ul{
+    display: flex;
+    margin: 10px auto;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0 12px;
+    height: 40px;
+}
+#nomePasta{
+    color: aliceblue;
+    background-color: rgba(229, 243, 243, 0.167);   
+    padding: 8px;
+    width: fit-content;
+    border-radius: 20px;
+}
+#botao_de_volta>img{
+    background-color: rgba(248, 252, 250, 0.062);
+    opacity: 25%;
+    height: 23px;
+    width: 23px;
+    padding: 3px;
+    border-radius: 20px;
+}
+#botao_de_volta>img:hover{
+    opacity: 30%;
+    border: 1px solid rgb(189, 250, 46); 
+}
+#bloco{
+    background-color: antiquewhite;
 }
