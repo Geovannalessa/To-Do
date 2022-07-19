@@ -51,16 +51,30 @@ header>div{
     background-color: rgba(255, 255, 255, 0.979);
     display: flex;
     align-items: flex-start;
-    padding: 20px 0;
+    padding: 20px 13px 100px 13px;
     height: fit-content;
 }
-#checkbox{
-    border: 1px yellow solid;
+#checkbox:checked + textarea{
+    color: rgba(0, 0, 0, 0.243);
+    text-decoration: line-through;
+    text-decoration-color: rgba(126, 126, 126, 0.416);
+    background-color: rgba(55, 0, 255, 0.025);
 }
-#texto{
-
+#cheackbox:hover{
+    background-color: rgb(211, 129, 35);
 }
-#bloco>textarea{
+#bloco{
+ display: flex;
+ flex-direction: column;
+}
+label{
+    display: flex;
+    padding-bottom: 10px;
+}
+#bloco>input{
+    background-color: rgb(133, 213, 67);
+}
+#bloco>textarea, #bloco>label>textarea{
     background-color: rgba(255, 255, 255, 0.979);
     border: rgba(128, 128, 128, 0.091) solid 1px;
     margin: auto;
@@ -71,5 +85,5 @@ header>div{
 }
 textarea:is(:focus,:valid){
     border-width: 2px;
-    border-color: aqua;
+    border-color: rgb(9, 31, 31);
 }
