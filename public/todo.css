@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+header{
+    background-color: rgb(223, 190, 190);
+    height: 100px;
+}
+header>div{
+    color:white;
+}
