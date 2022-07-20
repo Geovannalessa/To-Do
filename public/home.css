@@ -4,14 +4,40 @@ body{
 main{
     margin: auto;
     width: 700px;
-    border: 1px rgba(255, 255, 255, 0.336) solid;
+    border: 1px rgb(255, 255, 255) solid;
 }
 header{
     height: 100px;
     padding: 10px;
     border-bottom: 1px white solid;
-    background-color:rgba(0, 0, 0, 0.31) ;
+    background-color:rgba(255, 255, 255, 0.044) ;
+    display: flex;
+    justify-content: space-between;
 } 
+#titulo{
+    -webkit-text-stroke: 1px rgb(163, 17, 216);
+    font-size: 40px;
+    width: 20px;
+    height: fit-content;
+    color: transparent;
+}
+#adicionar_pasta{
+    background-color: rgba(240, 248, 255, 0.043);
+    color:  rgba(163, 17, 216, 0.489);
+    font-weight: bold;
+    align-self:end;
+    border: 1px ;
+    height:fit-content;
+    font-size: 20px;
+    padding: 5px 10px;
+    width:fit-content;
+    border-radius: 40px;
+}
+#adicionar_pasta:hover{
+    background:radial-gradient(rgba(80, 103, 255, 0.108),rgba(80, 103, 255, 0.226));
+    cursor: pointer ;
+}
+
 
 
 
@@ -50,6 +76,5 @@ header{
 /* Para telas grandes */
 @media(min-width:1281px){
     body{
-        background-color: blue;
     }
 }
