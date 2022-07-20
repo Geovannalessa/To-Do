@@ -74,7 +74,7 @@ label{
 #bloco>input{
     background-color: rgb(133, 213, 67);
 }
-#bloco>textarea, #bloco>label>textarea{
+#bloco>label>textarea{
     background-color: rgba(255, 255, 255, 0.979);
     border: rgba(128, 128, 128, 0.091) solid 1px;
     margin: auto;
@@ -82,8 +82,43 @@ label{
     outline: none;
     padding: 0 5px;
     overflow-y: hidden;
+    width:640px;
 }
-textarea:is(:focus,:valid){
-    border-width: 2px;
-    border-color: rgb(9, 31, 31);
+
+
+/* Para celulares */
+@media(max-width:480px){
+    body{
+        background-color: green;
+    }
+    main{
+        width: 330px;
+    }
+    #bloco>label>textarea{
+        width: 280px;
+    }
+}
+/* Para tabletes, ipads */
+@media(min-width:481px) and (max-width:767px){
+    body{
+        background-color: aquamarine;
+    }
+    main{
+        width: 450px;
+    }
+    #bloco>label>textarea{
+        width: 400px;
+    }
+}
+/* Para laptos e desktops */
+@media(min-width:990px) and (max-width:1280px){
+    body{
+        background-color: antiquewhite;
+    }
+}
+/* Para telas grandes */
+@media(min-width:1281px){
+    body{
+        background-color: blue;
+    }
 }
