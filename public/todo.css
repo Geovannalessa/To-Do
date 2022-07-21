@@ -11,7 +11,7 @@ header{
     height: 100px;
     padding: 10px;
     border-bottom: 1px white solid;
-    background-color:rgba(0, 0, 0, 0.31) ;
+    background-color:rgba(217, 217, 217, 0.06);
 } 
 header>div{
     -webkit-text-stroke: 1px rgb(163, 17, 216);
@@ -45,7 +45,8 @@ header>div{
 }
 #botao_de_volta>img:hover{
     opacity: 70%;
-    border: 1px solid rgb(189, 250, 46); 
+    background:radial-gradient(rgba(80, 103, 255, 0.108),rgba(80, 103, 255, 0.307));
+    cursor: pointer ; 
 }
 #bloco{
     background-color: rgba(255, 255, 255, 0.979);
@@ -54,7 +55,12 @@ header>div{
     padding: 20px 13px 100px 13px;
     height: fit-content;
 }
+#checkbox{
+
+    cursor: pointer;
+}
 #checkbox:checked + textarea{
+    
     color: rgba(0, 0, 0, 0.243);
     text-decoration: line-through;
     text-decoration-color: rgba(126, 126, 126, 0.416);
@@ -88,9 +94,6 @@ label{
 
 /* Para celulares */
 @media(max-width:480px){
-    body{
-        background-color: green;
-    }
     main{
         width: 330px;
     }
@@ -100,11 +103,10 @@ label{
 }
 /* Para tabletes, ipads */
 @media(min-width:481px) and (max-width:767px){
-    body{
-        background-color: aquamarine;
-    }
+
     main{
         width: 450px;
+       
     }
     #bloco>label>textarea{
         width: 400px;
@@ -119,6 +121,5 @@ label{
 /* Para telas grandes */
 @media(min-width:1281px){
     body{
-        background-color: blue;
     }
 }

@@ -96,6 +96,120 @@ header{
 
     
 }
+.informacoes_geo {
+    grid-area: footer;
+    
+    height: 200px;
+    font-family: 'Press Start 2P', cursiva;
+    padding-top: 2px;
+   
+    background-color: rgba(164, 131, 189, 0.466);
+    border: rgba(248, 0, 0, 0.423) 4px groove;
+    border-top: 10px rgba(0, 0, 0, 0.093) solid;
+    font-size: larger;
+    margin-top: 60px;
+    
+}
+
+.informacoes_geo>ul{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    align-self: center;
+    
+    background-color: #987eaf60;
+    padding:10px 0 20px 0 ;
+}
+.informacoes_geo>ul>li{
+    list-style: none;
+    padding-bottom: 20px;
+    
+}
+#desenvolvedora{
+    margin-left:0 ;
+    align-self:center;
+    font-size: 12px;
+    width:fit-content;
+    color: rgba(0, 0, 0, 0.622);
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+
+}
+#geovanna{
+/* position: absolute */
+width: fit-content;
+height: 42px;
+color: rgba(255, 255, 255, 0.101);
+-webkit-text-stroke: 1px #FFF;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+}
+#press{
+    color: white;
+    padding-bottom: 15px;
+    font-size: 10px;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.406);
+}
+#icons{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: auto;
+    justify-content: space-between;
+    padding: 0%;
+}
+
+#git{
+    border: ridge 3px  rgba(17, 210, 36, 0.498) ; 
+    background-color: rgba(255, 255, 255, 0.597);
+    height: 28px;
+    width: 30px;
+    animation-name: animacao_git;
+    animation-duration: 2s;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
+    margin-right: 30px;
+}
+#git:hover{
+    border: ridge 3px  rgba(238, 214, 0, 0.932); 
+    background-color: rgba(255, 255, 255, 0.745);
+    animation-play-state: paused;
+}
+#linkedin{
+    border: ridge 3px  rgba(17, 210, 36, 0.52); 
+    background-color: rgba(255, 255, 255, 0.597);
+    height: 19px;
+    width: 17px;
+    padding: 4px 8px 4px 8px;
+    animation-name: animacao_linkedin;
+    animation-duration: 2s;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
+    }
+#linkedin:hover{
+    border: ridge 3px  rgba(238, 214, 0, 0.826); 
+    background-color: rgba(255, 255, 255, 0.823);
+    animation-play-state: paused;
+
+}
+@keyframes animacao_git{
+    to{
+        height: 28px;
+    width: 30px;}
+    from{opacity:0% ;
+    box-shadow: #050704 10px inset ;}
+}
+@keyframes animacao_linkedin{
+    to{
+        height: 19px;
+        width: 17px;
+        padding: 4px 8px 4px 8px;
+    }
+    from{
+        opacity:0% ;
+    }
+}
 
 
 
@@ -136,3 +250,7 @@ header{
     }
 }
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Raleway+Dots&display=swap');
+@font-face {
+    font-family: 'Press Start 2P' ;
+    src: url("./PressStart2P-Regular.ttf");
+}
