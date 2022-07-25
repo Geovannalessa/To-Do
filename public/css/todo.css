@@ -35,7 +35,7 @@ header>div{
     width: fit-content;
     border-radius: 20px;
 }
-#botao_de_volta>img{
+#botao_de_volta>a>img{
     background-color: rgba(248, 252, 250, 0.062);
     opacity: 55%;
     height: 23px;
@@ -88,7 +88,7 @@ label{
     outline: none;
     padding: 0 5px;
     overflow-y: hidden;
-    width:640px;
+    width:inherit;
 }
 
 
@@ -120,6 +120,13 @@ label{
 }
 /* Para telas grandes */
 @media(min-width:1281px){
-    body{
+    main{
+        width: 950px;
+        font-size:17px
+    }
+    #bloco>label>textarea{
+        width: 900px;
+        height: 26px;
+        font-size: 17px;
     }
 }

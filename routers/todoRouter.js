@@ -8,7 +8,9 @@ const todoController = require('../controllers/todoController');
 const router = express.Router();
 
 //Criando a rota:
-router.get("/home", todoController.home);
+router.get('/home', todoController.home);
+router.get('/todo', todoController.todo);
+
  
 //Exportando o roteador:
 module.exports = router;

@@ -81,19 +81,25 @@ header{
     display: flex;
     color: white;
     margin-bottom: 20px;
-    border: rgb(230, 165, 96) 1px solid;
-    height: 50px;
+    border: rgba(158, 158, 158, 0.552) 1px solid;
+    height: 60px;
     justify-content: center;
     padding-top: 5px;
-
+    cursor: pointer;
     
 }
+.conteiner-pastas:hover{
+    border: rgba(237, 240, 183, 0.357) 1px solid;
+    background-color: rgba(127, 123, 117, 0.034);
+}
 .pasta{
-    background-color: rgba(255, 255, 255, 0.348);
+    background: radial-gradient(rgba(255, 255, 255, 0.06), rgba(203, 199, 199, 0.082)) ;
     height: fit-content;
     padding: 6px 10px;
     border-radius: 30px;
-
+    font-family:Arial, Helvetica, sans-serif;
+   color: rgba(245, 240, 255, 0.549);
+    cursor:text;
     
 }
 .informacoes_geo {
@@ -164,7 +170,7 @@ line-height: 30px;
     border: ridge 3px  rgba(17, 210, 36, 0.498) ; 
     background-color: rgba(255, 255, 255, 0.597);
     height: 28px;
-    width: 30px;
+    width: 34px;
     animation-name: animacao_git;
     animation-duration: 2s;
     animation-direction:alternate;
@@ -180,7 +186,7 @@ line-height: 30px;
     border: ridge 3px  rgba(17, 210, 36, 0.52); 
     background-color: rgba(255, 255, 255, 0.597);
     height: 19px;
-    width: 17px;
+    width: 19px;
     padding: 4px 8px 4px 8px;
     animation-name: animacao_linkedin;
     animation-duration: 2s;
@@ -196,14 +202,14 @@ line-height: 30px;
 @keyframes animacao_git{
     to{
         height: 28px;
-    width: 30px;}
+        width: 34px;}
     from{opacity:0% ;
     box-shadow: #050704 10px inset ;}
 }
 @keyframes animacao_linkedin{
     to{
         height: 19px;
-        width: 17px;
+        width: 19px;
         padding: 4px 8px 4px 8px;
     }
     from{
@@ -246,11 +252,14 @@ line-height: 30px;
 }
 /* Para telas grandes */
 @media(min-width:1281px){
-    body{
+    
+    main{
+        width: 950px;
+        font-size:17px
     }
 }
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Raleway+Dots&display=swap');
 @font-face {
     font-family: 'Press Start 2P' ;
-    src: url("./PressStart2P-Regular.ttf");
+    src: url('../PressStart2P-Regular.ttf');
 }
