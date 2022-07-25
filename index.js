@@ -1,10 +1,27 @@
+//importação da biblioteca express
 const express = require("express");
+
 // const servidor = express.Router;
-const servidor = express()
 
-servidor.get ('/', (req,res)=>{
-    console.log("cadê?")
-    res.send("alouu");
-})
+//Importando os roteadores
+const todoRouter = require('./routers/todoRouter');
 
-servidor.listen(8000)
+
+// Criando servidor
+const servidor = express();
+
+// Usando o router
+servidor.use('/', todoRouter);
+
+
+servidor.listen(8000);
+
+// servidor.get ('/', (req,res)=>{
+//     console.log("cadê?")
+//     res.send("alouu");
+// })
+
+
+
+// module.exports = index.js;
+
